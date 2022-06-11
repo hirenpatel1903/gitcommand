@@ -26,6 +26,11 @@ git add routes/web.php
 -- ## COMMIT  
 git commit -m "COMMIT MESSAGE"
 
+---------------------
+-- ## ADD CHANGES WITH COMMIT FILE 
+git add .; git commit -m "COMMIT MESSAGE"
+---------------------
+
 -- ## PUSH
 git push origin branch_name
 
@@ -61,6 +66,22 @@ git stash
 git stash pop
 git stash clear
 
+-- ## RESET COMMIT
+git reset COMMIT_ID
+
+-- ## RESET HARD
+git reset --hard branch_name
+
+-- ## RESET HEAD
+git reset --soft HEAD~1
+
+-- ## REBASE --> Lot's commit store with single command
+git rebase -i COMMIT_ID
+
+pick --> means takeing this commit 
+squash --> use commit, but meld into the previous commit
+reword --> use commit, but edit the commit message
+
 
 ## -- ## COMMON LINUX COMMAND
 -- ## CREATE NEW DIRECTORY
@@ -69,23 +90,3 @@ mkdir
 ls
 -- ## LIST WITH HIDDEN FILE AND DIRECTORY
 ls -a 
-
-
-git cherry-pick <commit-id> >> commit chnages to merge in another branch
-
-
-git revert <commit-id> >>> rollback specific remove commit
-
-git checkout HEAD~1 >>> 
-git reset HEAD~3   >>> 
-git diff HEAD~3 >>> 
-
-git rev-parse HEAD >>> 
-git rev-parse --short HEAD >>> 
-
-git log -1
-
-git merge --abort
-
-git reset --hard origin/master
-git push -f origin hiren
