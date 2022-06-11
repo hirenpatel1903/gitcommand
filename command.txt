@@ -1,0 +1,51 @@
+git config --global user.name "Your_Username"
+git config --global user.email "Your_Email_id"
+
+
+git branch >>> check branch 
+git branch test-branch >> created branch
+git checkout test-branch >> Switched to branch 'test-branch'
+git status
+git merge master
+
+git status
+git add .
+git add -A
+git add routes/web.php
+git commit -m "changes added"
+git push origin test-branchg
+
+git checkout <branch name>
+git checkout -m test-beta
+git cherry-pick <commit-id> >> commit chnages to merge in another branch
+
+
+git revert <commit-id> >>> rollback specific remove commit
+
+git checkout HEAD~1 >>> 
+git reset HEAD~3   >>> 
+git diff HEAD~3 >>> 
+
+git rev-parse HEAD >>> 
+git rev-parse --short HEAD >>> 
+
+git log -1
+
+git merge --abort
+
+git reset --hard origin/master
+git push -f origin hiren
+
+git restore resources/views/customer/maintenance-program-terms.blade - Copy.php
+
+ >> ignor git file
+
+
+
+git branch Branchname >> branch create kre
+git branch >> Listing branch
+git status >> status chnages files
+git add . >> File add krva mate 
+git commit -m "comment aapvani" >> identify thay comment 
+git push origin main >> code push krvo
+git pull origin dev >> pull leva mate use thay
